@@ -36,6 +36,7 @@ function SideNav(props) {
         <li>
           <Link to="/">
             <AiFillHome />
+            {/* we do this to hide names of nav links while closed */}
             <span style={open ? { display: "inline" } : { display: "none" }}>
               {data.home.name}
             </span>

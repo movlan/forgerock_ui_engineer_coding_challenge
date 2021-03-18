@@ -31,6 +31,14 @@ test("renders Footer", () => {
 });
 
 test("header always on top", () => {
+  // jest do not check external css
+
+  // enzyme does not support react v.17
+
+  // I did not find any ways to check this
+  throw new Error(
+    "jest does not check external css. enzyme does not support react v.17. I did not find any ways to check this"
+  );
   // const wrapper = mount(<Main />);
   // const header = wrapper.get(0).props;
   // console.log(header);

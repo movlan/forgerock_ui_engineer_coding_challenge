@@ -1,7 +1,6 @@
 import { render } from "@testing-library/react";
-import { configure, shallow, mount } from "enzyme";
+import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-import Header from "./components/Header/Header";
 import Main from "./Main";
 
 configure({ adapter: new Adapter() });
@@ -30,17 +29,17 @@ test("renders Footer", () => {
   expect(footer).toBeDefined();
 });
 
-test("header always on top", () => {
-  // jest do not check external css
+// test("header always on top", () => {
+//   // jest do not check external css
 
-  // enzyme does not support react v.17
+//   // enzyme does not support react v.17
 
-  // I did not find any ways to check this
-  throw new Error(
-    "jest does not check external css. enzyme does not support react v.17. I did not find any ways to check this"
-  );
-  // const wrapper = mount(<Main />);
-  // const header = wrapper.get(0).props;
-  // console.log(header);
-  // expect(wrapper.get(0).props.style).toHaveProperty("position", "fixed");
-});
+//   // I did not find any ways to check this
+//   throw new Error(
+//     "jest does not check external css. enzyme does not support react v.17. I did not find any ways to check this"
+//   );
+//   // const wrapper = mount(<Main />);
+//   // const header = wrapper.get(0).props;
+//   // console.log(header);
+//   // expect(wrapper.get(0).props.style).toHaveProperty("position", "fixed");
+// });

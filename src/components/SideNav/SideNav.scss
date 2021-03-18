@@ -1,0 +1,53 @@
+@import "../../styles/config";
+
+.SideNav {
+  // making height to fit between header and footer
+  height: calc(100% - #{$header-height + $footer-height});
+  background-color: $secondary-color;
+  // position nav
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  margin: $header-height 0 $footer-height 0;
+  transition: width 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  vertical-align: middle;
+  list-style-type: none;
+  height: 50px;
+}
+
+li span {
+  vertical-align: top;
+  font-size: 24px;
+}
+
+li a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 0 5px;
+  color: $main-color;
+  font-size: 30px;
+  display: block;
+}
+
+a:hover {
+  color: $link-color;
+}
+
+svg {
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+@import "../../styles/_mobile.scss";

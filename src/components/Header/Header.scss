@@ -1,0 +1,23 @@
+@import "../../styles/config";
+
+.Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: $main-color;
+  // center text
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header a {
+  text-decoration: none;
+}
+
+.header-text {
+  color: $background-color;
+  font-size: 30px;
+  font-weight: 600;
+}

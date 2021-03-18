@@ -1,0 +1,19 @@
+@import "../../styles/config";
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  background-color: $footer-color;
+  // center text
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  color: $background-color;
+  font-size: 15px;
+  font-weight: 400;
+}

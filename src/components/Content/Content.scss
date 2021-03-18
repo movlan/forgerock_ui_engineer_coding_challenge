@@ -1,0 +1,31 @@
+@import "../../styles/config";
+
+.Content {
+  margin: $header-height 0 $footer-height 0;
+  padding: 50px;
+  transition: 0.5s;
+}
+
+.Content a {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 0;
+  margin: 5px 10px;
+  background-color: $secondary-color;
+  text-decoration: none;
+  color: $main-color;
+  text-transform: uppercase;
+  width: 180px;
+  text-align: center;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+.Content p {
+  // to make \n in data text to work
+  white-space: pre-line;
+}
+
+@import "../../styles/_mobile.scss";
